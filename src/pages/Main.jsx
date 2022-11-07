@@ -10,7 +10,7 @@ function Main() {
 
   const getApi = async () => {
     const { data } = await axios(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=f6b4015b503ee8bf39770c208081e48e`
     );
     setMovies(data.results);
     console.log(movies);
@@ -21,7 +21,7 @@ function Main() {
       getApi()
     }else{
       const { data } = await axios(
-        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${search}&page=1`
+        `https://api.themoviedb.org/3/search/movie?api_key=f6b4015b503ee8bf39770c208081e48e&query=${search}&page=1`
       );
       setMovies(data.results);
     }
