@@ -68,10 +68,7 @@ const googleAcc = ()=>{
 
   return (
     <div className="login">
-      <div>
-        <img src="https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-      </div>
-      <div>
+      <div className="login-div">
         <form onSubmit={(e)=>handleSubmit(e)}>
           <h2>Login</h2>
           <label htmlFor="email">Email</label>

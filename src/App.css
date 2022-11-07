@@ -13,6 +13,9 @@
     background-color: blue;
     color: white;
 }
+.navbar img{
+    width: 5rem;
+}
 .nav-btn button{
     width: 6rem;
     padding: 0.5rem 1rem;
@@ -22,6 +25,10 @@
     background-color: blue;
     color: white;
     font-size: 1rem;
+    transition: all 0.4s ease;
+}
+.nav-btn button:hover{
+    transform: scale(1.1);
 }
 .container{
     display: flex;
@@ -106,6 +113,20 @@ button{
 .details-div img{
     height: 40rem
 }
+.details-div button{
+    background-color: rgb(255, 30, 30);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+}
+.details-div button:hover, .login button:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
 .details-body{
     width: 40%;
 }
@@ -121,4 +142,43 @@ button{
     border-radius: 8px;
     font-size: 0.8rem;
     letter-spacing: 0.08rem;
+}
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.login form, .login-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.login-div{
+    background-color: orange;
+    padding: 5rem;
+}
+.login label{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.login input{
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+.login button{
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    background-color: rgb(255, 0, 76);
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease;
 }

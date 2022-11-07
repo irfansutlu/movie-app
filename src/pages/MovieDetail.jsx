@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function MovieDetail() {
   const [movie, setMovie] = useState([]);
   const { id } = useParams();
+  const navigate = useNavigate()
 
   const getApi = async () => {
     const { data } = await axios(
@@ -28,6 +29,7 @@ function MovieDetail() {
             <h3>{item?.name}</h3>
           ))}
         </div>
+        <button onClick={()=>navigate(-1)}>Go Back</button>
       </div>
     </div>
   );
